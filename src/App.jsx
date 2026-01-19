@@ -1,15 +1,13 @@
 // import { useState } from "react";
 
-import Navbar from "./Sections/Navbar";
+import Navbar from "./Sections/Navbar.jsx";
 
 function App() {
-  // const [hey, setHey] = useState();
-  console.log();
-  const khaled = "";
-  console.log(khaled);
   return (
     <div className="relative w-screen min-h-screen overflow-x-auto">
       <Navbar />
+      <section id="home" className="min-h-screen bg-red-400"></section>
+      <section id="services" className="min-h-screen bg-stone-500"></section>
     </div>
   );
 }
