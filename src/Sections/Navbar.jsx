@@ -80,7 +80,7 @@ function Navbar() {
       passive: true,
     });
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []);
 
   const toggleMenu = () => {
     if (isOpen) {
