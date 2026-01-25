@@ -8,7 +8,8 @@ import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 
 export default function Hero() {
-  const isMobile = useMediaQuery({ maxWidth: 853 });
+  const isMobile = useMediaQuery({ maxWidth: 400 });
+  const isTablet = useMediaQuery({ maxWidth: 853 });
   const contextRef = useRef(null);
   const headerRef = useRef(null);
   const aboutText = `I help growing brands and startups gain an
@@ -39,7 +40,7 @@ export default function Hero() {
         <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
           <div
             ref={headerRef}
-            className="flex flex-col justify-center gap-12 pt-16 sm:gap-16 -translate-y-3"
+            className="flex flex-col justify-center gap-12 pt-16 sm:gap-16 "
           >
             <p className="text-sm font-light tracking-[0.5rem] uppercase px-10 text-black">
               404 no bug found
@@ -72,7 +73,7 @@ export default function Hero() {
         >
           <ambientLight intensity={0.5} />
           <Float speed={0.5}>
-            <Planet scale={isMobile ? 0.7 : 1} />
+            <Planet scale={isMobile ? 0.5 : isTablet ? 0.7 : 1} />
           </Float>
           <Environment>
             <group rotation={[-Math.PI / 3, 4, 1]}>
