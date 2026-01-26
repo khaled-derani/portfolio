@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import AnimatedHeaderSection from "../Components/AnimatedHeaderSection";
+import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { projects } from "../constants";
 import { useRef, useState } from "react";
 import gsap from "gsap";
@@ -95,7 +95,7 @@ function Works() {
     <section id="work" className="flex flex-col min-h-screen">
       <AnimatedHeaderSection
         subTitle={"Logic meets Aesthtics, Seamlessly"}
-        title={"About"}
+        title={"Works"}
         text={text}
         textColor={"text-black"}
         withScrollTriger={true}

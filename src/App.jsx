@@ -1,14 +1,14 @@
 // import { useState } from "react";
 
 import ReactLenis from "lenis/react";
-import Hero from "./Sections/Hero.jsx";
-import Navbar from "./Sections/Navbar.jsx";
-import Services from "./Sections/Services.jsx";
-import ServiceSummary from "./Sections/ServiceSummary.jsx";
-import About from "./Sections/About.jsx";
-import Works from "./Sections/Works.jsx";
-import ContactSummary from "./Sections/ContactSummary.jsx";
-import Contact from "./Sections/Contact.jsx";
+import Hero from "./sections/Hero.jsx";
+import Navbar from "./sections/Navbar.jsx";
+import Services from "./sections/Services.jsx";
+import ServiceSummary from "./sections/ServiceSummary.jsx";
+import About from "./sections/About.jsx";
+import Works from "./sections/Works.jsx";
+import ContactSummary from "./sections/ContactSummary.jsx";
+import Contact from "./sections/Contact.jsx";
 import { useProgress } from "@react-three/drei";
 
 function App() {

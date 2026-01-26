@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
-import { Planet } from "../Components/Planet";
+import { Planet } from "../components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
-import AnimatedHeaderSection from "../Components/AnimatedHeaderSection";
+import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 
 export default function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 400 });
