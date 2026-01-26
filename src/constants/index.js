@@ -12,7 +12,7 @@ export const servicesData = [
       },
       {
         title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
+        description: "(React&Next.js, TypeScript, Interactive UI/UX)",
       },
       {
         title: "Database Design",
@@ -21,21 +21,21 @@ export const servicesData = [
     ],
   },
   {
-    title: "DevOps & Cloud Solutions",
+    title: "CMS & No-Code Integrations",
     description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
+      "When a project requires flexibility and fast delivery, I integrate Webflow or WordPress (Elementor) with custom solutions—without compromising performance or visual identity.",
     items: [
       {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
+        title: "Webflow Development",
+        description: "(Custom Interactions, Clean Structure)",
       },
       {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
+        title: "WordPress + Elementor",
+        description: "(Custom Themes, Performance Focus)",
       },
       {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
+        title: "Headless CMS",
+        description: "(CMS + Next.js Integration)",
       },
     ],
   },
@@ -59,21 +59,21 @@ export const servicesData = [
     ],
   },
   {
-    title: "Web & Mobile Apps",
+    title: "3D & Interactive Experiences",
     description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+      "If you want a website that leaves a strong impression, I add an interactive layer using 3D and animations to create modern, immersive experiences—without compromising performance.",
     items: [
       {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
+        title: "Three.js",
+        description: "(3D Scenes, Interactive Objects)",
       },
       {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
+        title: "Blender",
+        description: "(optimized 3D Assets for Web)",
       },
       {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        title: "Creative Animations",
+        description: "(GSAP + WebGL Effects))",
       },
     ],
   },
@@ -81,11 +81,11 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Bankist website Landing Page",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "A modern banking landing page for Bankist, offering digital financial services such as secure money transfers, savings management, loans, and smart budgeting tools, designed to provide a fast, safe, and user-friendly banking experience.",
     href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "/assets/projects/Bankist.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
@@ -97,86 +97,96 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Resumind AI for CVs analysis",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+      "An AI-powered platform for analyzing CVs and resumes, providing smart insights, skill evaluation, keyword optimization, and personalized recommendations to help users improve their resumes and increase hiring chances.",
     href: "",
-    image: "/assets/projects/plant-shop.jpg",
+    image: "/assets/projects/Resumind.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
+      { id: 3, name: "TypeScript" },
       { id: 4, name: "Tailwind CSS" },
     ],
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "The Wild Oasis",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+      "A hotel management web application for booking cabins, managing guests, reservations, and real-time statistics through a modern dashboard.",
     href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/TheWildOasis.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "Subabase" },
+      { id: 3, name: "Tailwind" },
+      { id: 4, name: "NextAuth" },
     ],
   },
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "fizzi",
     description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
+      "A 3D interactive landing page for a soft drinks brand, showcasing products, promotions, and brand identity through immersive visuals.",
     href: "",
-    image: "/assets/projects/electronics-store.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
+    image: "/assets/projects/Fizzi.png",
+    bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
+      { id: 1, name: "Three.js" },
+      { id: 2, name: "Gsap" },
+      { id: 3, name: "Prismic" },
+      { id: 4, name: "Next.js" },
     ],
   },
   {
     id: 5,
-    name: "Home Decor Marketplace",
+    name: "forkify",
     description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
+      "A recipe web application that allows users to search, view, and manage recipes with modern UI and interactive features.",
     href: "",
-    image: "/assets/projects/home-decor-store.jpg",
-    bgImage: "/assets/backgrounds/table.jpg",
+    image: "/assets/projects/Forkify.png",
+    bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
+      { id: 1, name: "APIs" },
+      { id: 2, name: "Sass" },
+      { id: 3, name: "Js" },
     ],
   },
   {
     id: 6,
-    name: "Digital Game Store",
+    name: "World wise",
     description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
+      "A modern and interactive web project showcasing clean design and engaging user experience.",
     href: "",
-    image: "/assets/projects/game-store.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
+    image: "/assets/projects/worldWise.png",
+    bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 1, name: "React.js" },
+      { id: 2, name: "Routes" },
+      { id: 3, name: "Tailwind css" },
+      { id: 4, name: "Leaflet" },
     ],
   },
 ];
 export const socials = [
-  { name: "Instagram", href: "/" },
   {
-    name: "Youtube",
-    href: "/",
+    name: "Instagram",
+    href: "https://www.instagram.com/h1ven_dev?igsh=eXdzYnBsc2N6YTJr",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
-  { name: "LinkedIn", href: "/" },
-  { name: "GitHub", href: "/" },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/khaled-derani-2285212a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/khaled-derani",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
 ];

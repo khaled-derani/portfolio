@@ -6,20 +6,44 @@ import Navbar from "./Sections/Navbar.jsx";
 import Services from "./Sections/Services.jsx";
 import ServiceSummary from "./Sections/ServiceSummary.jsx";
 import About from "./Sections/About.jsx";
+import Works from "./Sections/Works.jsx";
+import ContactSummary from "./Sections/ContactSummary.jsx";
+import Contact from "./Sections/Contact.jsx";
+import { useProgress } from "@react-three/drei";
 
 function App() {
+  const { progress, active } = useProgress();
+
+  const isReady = !active && progress === 100;
   return (
     <ReactLenis root className="relative w-screen min-h-screen overflow-x-auto">
-      <Navbar />
-      <Hero />
-      <ServiceSummary />
-      <Services />
-      <About />
-      <section className="h-screen"></section>
-      <section className="h-screen"></section>
-      <section className="h-screen"></section>
-      <section className="h-screen"></section>
-      <section className="h-screen"></section>
+      {!isReady && (
+        <div className="fixed inset-0 z-999 flex flex-col items-center justify-center bg-black text-white transition-opacity duration-700 font-light">
+          <p className="mb-4 text-xl tracking-widest animate-pulse">
+            Loading {Math.floor(progress)}%
+          </p>
+          <div className="relative h-1 overflow-hidden rounded w-60 bg-white/20">
+            <div
+              className="absolute top-0 left-0 h-full transition-all duration-300 bg-white"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
+        </div>
+      )}
+      <div
+        className={`${
+          isReady ? "opacity-100" : "opacity-0"
+        } transition-opacity duration-1000`}
+      >
+        <Navbar />
+        <Hero />
+        <ServiceSummary />
+        <Services />
+        <About />
+        <Works />
+        <ContactSummary />
+        <Contact />
+      </div>
     </ReactLenis>
   );
 }

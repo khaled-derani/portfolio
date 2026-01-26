@@ -1,7 +1,3 @@
-import { useRef } from "react";
-import AnimatedTextLines from "../Components/AnimatedTextLines";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import { Canvas } from "@react-three/fiber";
 import { Planet } from "../Components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
